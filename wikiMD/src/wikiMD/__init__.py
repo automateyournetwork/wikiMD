@@ -1,0 +1,1 @@
+from .wikiMD import transformWikiPage

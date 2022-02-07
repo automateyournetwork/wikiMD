@@ -1,8 +1,0 @@
-[build-system]
-requires = [
-    "setuptools",
-    "wheel",
-    "jinja2",
-    "wikipedia",
-]
-build-backend = "setuptools.build_meta"

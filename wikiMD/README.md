@@ -20,4 +20,9 @@ Provide a valid Wikipedia Page Title to the function
 >>>     fh.write(computerWiki)             
 >>>     fh.close()
 
+
+>>> python -m wikiMD Computer
+
+>>> wikiMD Computer
+
 ```

@@ -1,14 +1,16 @@
+from pathlib import Path
 import wikipedia
 import logging
 import json
 from jinja2 import Environment, FileSystemLoader
-template_dir = ''
+
+template_dir = Path(__file__).parent
 env = Environment(loader=FileSystemLoader(template_dir))
 wiki_template = env.get_template('wiki.j2')
 
 def tranformWikiPage(page):
     try:
-        rawPage = wikipedia.page(f"{ page }")
+        rawPage = wikipedia.page(page)
         wikiTitle = rawPage.title
         wikiURL = rawPage.url
         wikiContent = json.dumps(rawPage.content)
