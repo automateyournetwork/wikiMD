@@ -1,0 +1,7 @@
+[build-system]
+requires = [
+    "jinja2",
+    "wikipedia",
+    "json"
+]
+build-backend = "setuptools.build_meta"
